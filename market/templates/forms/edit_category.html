@@ -1,0 +1,50 @@
+{% extends "/layouts/main_layout.html" %} {% block content %}
+<!-- <div class="container" style="margin: 10px;"> -->
+<!-- <div
+  class="container"
+  style="background-color: cyan; margin-top: 20px; padding: 20px;"
+>
+  <div class="row">
+    <div class="col-sm">
+      Category ID
+    </div>
+    <div class="col-sm">
+      Type
+    </div>
+    <div class="col-sm">
+      Items
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
+      
+    </div>
+  </div>
+</div> -->
+
+{%for category in categories%}
+<div class="card mb-3">
+  <img src="..." class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{category[0]}}</h5>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content. {{category[1]}}
+    </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<!-- </div> -->
+
+<!-- <div class="container" style="border: cornflowerblue 3px0;">
+  <li id="{{category['id']}}"></li>
+</div> -->
+{%endfor%} {%endblock content%}

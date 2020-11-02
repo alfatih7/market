@@ -1,0 +1,12 @@
+{% extends "layouts/main_layout.html" %} {% block content %} {% if items %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      {{category.id}}
+    </div>
+    <div class="col-sm">
+      {{category.type}}
+    </div>
+  </div>
+</div>
+{%endif%} {% endblock content%}

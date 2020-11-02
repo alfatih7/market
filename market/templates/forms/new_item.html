@@ -1,0 +1,47 @@
+{% extends "/layouts/main_layout.html" %} {% block content %}
+<div class="content-section">
+  <form method="post" id="add-form">
+    <fieldset class="form-group continer">
+      <legend class="border-bottom mb-4">Add Items</legend>
+      <div class="form-group row">
+        {{form.name.label(class_="col-sm-2 col-form-label")}}
+        {{form.name(class_="col-sm-3 col-form-label")}}
+      </div>
+      <div class="form-group row">
+        {{form.category_name.label(class_="col-sm-2 col-form-label")}}
+        {{form.category_name(class_="col-sm-3 col-form-label")}}
+      </div>
+      <div class="form-group row">
+        {{form.origin_price.label(class_="col-sm-2 col-form-label")}}
+        {{form.origin_price(class_="col-sm-3 col-form-label")}}
+      </div>
+
+      <div class="form-group row">
+        {{form.sale_price.label(class_="col-sm-2 col-form-label")}}
+        {{form.sale_price(class_="col-sm-3 col-form-label")}}
+      </div>
+      <div class="form-group row">
+        {{form.count.label(class_="col-sm-2 col-form-label")}}
+        {{form.count(class_="col-sm-3 col-form-label")}}
+      </div>
+
+      <div class="form-group">
+        <input
+          type="submit"
+          value="Create Category"
+          class="btn btn-primary btn-outline-info"
+        />
+      </div>
+    </fieldset>
+  </form>
+  <!-- <div class="borker-buttom mb-4">
+    <ul id="category-list">
+      {% for c in category %}
+      <li>{{c.type}}</li>
+      {% endfor %}
+    </ul>
+  </div> -->
+</div>
+
+<script></script>
+{% endblock content %}

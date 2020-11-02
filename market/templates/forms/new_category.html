@@ -1,0 +1,31 @@
+{% extends "/layouts/main_layout.html" %} {% block content %}
+<div class="content-section">
+  <form method="post" id="add-form">
+    <fieldset class="form-group continer">
+      <legend class="border-bottom mb-4">Add Category</legend>
+      <div class="form-group row">
+        <!-- <label for="name">Category Name</label> -->
+        {{form.categoryType.label(class_="col-sm-2 col-form-label")}}
+        {{form.categoryType(class_="col-sm-3 col-form-label")}}
+      </div>
+      <div class="form-group">
+        <!-- {{ form.submit(class="btn btn-outline-info") }} -->
+        <input
+          type="submit"
+          value="Create Category"
+          class="btn btn-primary btn-outline-info"
+        />
+      </div>
+    </fieldset>
+  </form>
+  <!-- <div class="borker-buttom mb-4">
+    <ul id="category-list">
+      {% for c in category %}
+      <li>{{c.type}}</li>
+      {% endfor %}
+    </ul>
+  </div> -->
+</div>
+
+<script></script>
+{% endblock content %}
