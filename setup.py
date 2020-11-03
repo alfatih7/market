@@ -6,7 +6,7 @@ import json
 
 database_name = "marketdb"
 database_path = "postgres://{}:{}@{}/{}".format(
-    'postgres', '1993239', 'localhost:5432', database_name)
+    'postgres', '*****', 'localhost:5432', database_name)
 
 db = SQLAlchemy()
 migrate = Migrate()
